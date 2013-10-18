@@ -1,0 +1,14 @@
+<!DOCTYPE module PUBLIC "//gwt-module/" "http://google-web-toolkit.googlecode.com/svn/tags/2.0.0/distro-source/core/src/gwt-module.dtd">
+<module>
+
+	<!-- Inherit the core Web Toolkit stuff.                        -->
+	<inherits name='com.google.gwt.user.User' />
+
+    <!-- RPC Servlet -->
+    <servlet class="br.com.drycode.api.web.gwt.dispatchService.server.DispatchServiceServlet" path="/dispatchService" />
+
+    <!-- Specify the paths for translatable code -->
+    <source path='client' excludes="**/*Test.java, **/*Mock.java, **/*MockFactory.java, **/*TestUtils.java" />
+    <source path='shared' excludes="**/*Test.java, **/*Mock.java, **/*MockFactory.java, **/*TestUtils.java" />
+
+</module>
